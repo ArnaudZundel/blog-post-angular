@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Post</h1>
+      <ul class="list-group">     
+        <app-post-list-item-component  *ngFor="let post of post1"
+                        [postTitle]="post.title"
+                        [postContent]="post.content">
+        </app-post-list-item-component>
+        <app-post-list-item-component  *ngFor="let post of post2"
+                        [postTitle]="post.title"
+                        [postContent]="post.content">
+        </app-post-list-item-component>
+        <app-post-list-item-component  *ngFor="let post of post3"
+                        [postTitle]="post.title"
+                        [postContent]="post.content">
+        </app-post-list-item-component>
+       </ul>
+    </div>
+  </div>
+</div>
